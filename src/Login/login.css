@@ -1,0 +1,107 @@
+/* Global reset i font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f2f5, #dfe6ed);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glavni kontejner login forme */
+.login-form-wrapper {
+  background-color: #fff;
+  width: 380px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-form-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Naslov */
+.h1-headline h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 1.2rem;
+}
+
+/* Sekcija “Admin Login” */
+.login-icon h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3a3a3a;
+  margin-bottom: 1.2rem;
+}
+
+/* Polja za unos */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.email-input,
+.password-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.email-input:focus,
+.password-input:focus {
+  border-color: #007bff;
+}
+
+/* Dugme */
+.login-btn button {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-btn button:hover {
+  background-color: #0056b3;
+}
+
+/* Info sekcija */
+.login-info {
+  margin-top: 1.6rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.login-info .info-h p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.login-info .info-value b {
+  color: #007bff;
+}
