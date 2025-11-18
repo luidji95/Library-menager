@@ -33,10 +33,167 @@
   }
 }
 
-.card {
-  padding: 2em;
+/* Root setup */
+body {
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.read-the-docs {
-  color: #888;
+#root {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+
+.dashboard-container {
+  display: flex;
+  gap: 25px;
+}
+
+
+.members-section {
+  width: 280px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.members-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.members-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.members-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.members-list-item {
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.members-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.members-actions button {
+  margin-left: 5px;
+  padding: 3px 6px;
+  font-size: 11px;
+}
+
+
+.books-section {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table th {
+  background: #eef1f4;
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.books-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.books-table tr:hover {
+  background: #f9fafb;
+}
+
+.books-table button {
+  margin-right: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+/* MODAL */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.modal h3 {
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.modal-actions button {
+  padding: 8px 14px;
+  border-radius: 6px;
 }
